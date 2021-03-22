@@ -4,12 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+    background-color: lightgrey;
+}
+h1{
+  padding-top: 20px;
+  font-family: helvetica;
+  background-color: white;
+  padding-left: 20px;
+  color: #28B0DD;
+}
 nav{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
-  background-color: blue;
+  background-color: #28B0DD;
 }
 p{
   margin-right: 30px;
@@ -21,9 +31,7 @@ p{
   display: flex;
   flex-wrap: wrap;
 }
-main{
-  background-color: lightgrey;
-}
+
 .card{
   display: flex;
   justify-content: center;
@@ -32,10 +40,11 @@ main{
   height: 100px;
   margin-top: 20px;
   margin-bottom: 80px;
-  width: calc((100% /5) - 40px);
+  width: calc((100% /5) - 60px);
   margin-right: 40px;
   background-color: white;
   border-radius: 15px;
+  margin-left: 20px;
 
 }
 .card span{
