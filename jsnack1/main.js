@@ -32,7 +32,7 @@ $(document).ready(() => {
 		}
 
 	});
-  console.log(`${bikes[index].nome}e il suo peso è ${min} `);
+  console.log(`${bikes[index].nome} e il suo peso è ${min} `);
 
 
 

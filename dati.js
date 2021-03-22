@@ -100,6 +100,33 @@ const icone = [
 
 // Partendo dalla seguente struttura dati , mostriamo in pagina
 // tutte le icone disponibili come da layout.
+
+// Milestone 2
+// Coloriamo le icone per tipo.
+// let lista = $("#lista")
+
 icone.forEach((item, i) => {
-	$("#icone").append(`<div class="card"> <i class="${item.family} ${item.prefix}${item.name}"></i> </div>`);
+	let color;
+	if (item.type == "animal") {
+		 color = "blue";
+	}else if (item.type == "vegetable") {
+		 color = "orange";
+	}else {
+		 color = "purple";
+	}
+	$("#icone").append(`<div class="card ${item.type}"> <i class="${item.family} ${item.prefix}${item.name} ${color}"></i><span>${item.name}</span> </div>`);
+
+});
+
+// Milestone 3 (BONUS)🏥
+// Creiamo una select con i tipi di icone e usiamola per filtrare le icone
+
+$('#lista').change(function() {
+	let valore = $(this).val();
+	if (valore == "All") {
+		$(".card").show();
+	}else {
+		$(".card").hide();
+		$(`.card.${valore}`).show();
+	}
 });

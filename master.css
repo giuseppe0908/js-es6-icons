@@ -21,20 +21,37 @@ p{
   display: flex;
   flex-wrap: wrap;
 }
+main{
+  background-color: lightgrey;
+}
 .card{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100px;
   margin-top: 20px;
   margin-bottom: 80px;
   width: calc((100% /5) - 40px);
   margin-right: 40px;
-  background-color: yellow;
+  background-color: white;
   border-radius: 15px;
 
 }
+.card span{
+  text-transform: uppercase;
+}
+
 .card > i{
 
   font-size: 40px;
+}
+.blue{
+  color: blue;
+}
+.orange{
+  color: orange;
+}
+.purple{
+  color: purple;
 }
