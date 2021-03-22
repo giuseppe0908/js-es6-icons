@@ -1,0 +1,40 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: blue;
+}
+p{
+  margin-right: 30px;
+  color: white;
+  font-size: 25px;
+}
+
+#icone{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  width: calc((100% /5) - 40px);
+  margin-right: 40px;
+  background-color: yellow;
+  border-radius: 15px;
+
+}
+.card > i{
+
+  font-size: 40px;
+}
